@@ -1,1 +1,4 @@
 #Code
+Info="""
+Script info
+"""
