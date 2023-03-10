@@ -2,13 +2,6 @@ import os
 os.system("cls")
 print("""
 #----------------Script header| please do not modify this head section without permission...
-
-    ---------Program Info----------   
-    Name: Face RECOGNITION AI         
-    Language: Python                  
-    Published by : Notre Dame IT Club 
-    Patron: Abdul Basit Tonmoy        
-    Team Member: Mahin,Shawki,Arko    
                 ----       
     Copyright of Mahin Bin Hasan,2023            
     https://www.facebook.com/root.mahin                       
@@ -64,7 +57,7 @@ def newwin():
     Lab = Label(win,text='AI based Face Recognition NDITC',font=('','12'))
     Lab.pack()
     
-    bod = Label(win,text='This program is created by NDITC AI Team.\nPatron: Abdul Basit Tonmoy\n GUI,AI & Voice implementation: Md. Al Mahin Bin Hasan\n Post processing:Ahammed Shawki \nImage resources : Arko Chowdhury ')
+    bod = Label(win,text='This program is created by  Md. Al Mahin Bin Hasan\n')
     bod.pack()
     
     t = Button(win, bg="#777a80", fg="#bbbbbd", width=22, text='Find me on Facebook!!', command=lambda: brs())
@@ -93,37 +86,13 @@ video_capture = cv2.VideoCapture(0)
 
 mahin_image = face_recognition.load_image_file("mahin.jpg")
 mahin_face_encoding = face_recognition.face_encodings(mahin_image)[0]
-saikat1_image = face_recognition.load_image_file("saikat1.jpg")
-saikat1_face_encoding = face_recognition.face_encodings(saikat1_image)[0]
-saikat2_image = face_recognition.load_image_file("saikat2.jpg")
-saikat2_face_encoding = face_recognition.face_encodings(saikat2_image)[0]
-tonmoy_image = face_recognition.load_image_file("tonmoy.jpg")
-tonmoy_face_encoding = face_recognition.face_encodings(tonmoy_image)[0]
-tonmoy2_image = face_recognition.load_image_file("tonmoy2.jpg")
-tonmoy2_face_encoding = face_recognition.face_encodings(tonmoy2_image)[0]
-hemanto1_image = face_recognition.load_image_file("hemanto1.jpg")
-hemanto1_face_encoding = face_recognition.face_encodings(hemanto1_image)[0]
-hemanto2_image = face_recognition.load_image_file("hemanto2.jpg")
-hemanto2_face_encoding = face_recognition.face_encodings(hemanto2_image)[0]
+
 
 known_face_encodings = [
     mahin_face_encoding,
-    saikat1_face_encoding,
-    saikat2_face_encoding,
-    tonmoy_face_encoding,
-    tonmoy2_face_encoding,
-    hemanto1_face_encoding,
-    hemanto2_face_encoding,
 ]
 known_face_names = [
     "Mahin",
-    "Saikat Sir",
-    "Saikat Sir",
-    "Tonmoy",
-    "Tonmoy",
-    "Father Hemanto",
-    "Father Hemanto",
-
 ]
 #-----------------------------------------Face Section End---------------------------
 face_locations = []
